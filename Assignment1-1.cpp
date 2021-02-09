@@ -23,10 +23,10 @@ int main()
     double cashseatA = rateA * seatA;
     double cashseatB = rateB * seatB;
     double cashseatC = rateC * seatC;
+    double total = cashseatA + cashseatB + cashseatC;
 
 //display cash amount
-    cout << "You made $"<< fixed << showpoint << setprecision(2) << cashseatA << " for the seats in class A." << endl;
-    cout << "You made $"<< fixed << showpoint << setprecision(2) << cashseatB << " for the seats in class B." << endl;
-    cout << "You made $"<< fixed << showpoint << setprecision(2) << cashseatC << " for the seats in class C." << endl;
+    cout << "You made $"<< fixed << showpoint << setprecision(2) << total << " for all the seats." << endl;
+    
 
 }
