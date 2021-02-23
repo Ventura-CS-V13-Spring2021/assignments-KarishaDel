@@ -16,12 +16,9 @@ int main()
         {
             cout << "All numbers are the same." << endl;
         }
-    else if (number1 == number2 && number2 != number3 || number1 == number3 && number2 != number3|| number2 == number3 && number1 != number3)
-        {
-            cout << "Two of the numbers are the same." << endl;
-        }
+        
     else
-      cout << "How did you get here?" << endl;          
+      cout << "There are two duplicate numbers." << endl;          
     
     return 0;
 }
