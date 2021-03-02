@@ -7,14 +7,7 @@ int main()
 
   while (i <= 90)
   {
-    if (i % 5 == 4)
-    {
-      cout << static_cast<char>(i) << " " << endl;
-    }
-    else
-    {
-      cout << static_cast<char>(i) << " ";
-    }
-      i++;
-    }
+    cout << (i % 5 ? ' ' : '\n') << static_cast<char>(i);
+    i++;
+  }
 }
