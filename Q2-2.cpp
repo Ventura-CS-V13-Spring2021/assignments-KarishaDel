@@ -13,8 +13,11 @@ int main()
     for (int i; i < 5; i++)
     {
        randum = rand() % 100;  
-       cout << randum << endl;  
-       
+       cout << randum << endl;      
+    if(randum>max) 
+        max=randum;
+    if(randum<min) 
+       min=randum;        
     }
 
 
