@@ -15,21 +15,7 @@ int main()
        randum = rand() % 100;  
        cout << randum << endl;
     }
-    do
-    {
-        if(randum > max);
-        {
-            max = randum;
-                cout << "Max: " << max << endl;
-        }
-       
-    if(randum < min);
-        {
-            min = randum;
-            cout << "Min: " << min << endl;
-        }
-    } while(randum < 5);
-    
+
 
 
    
