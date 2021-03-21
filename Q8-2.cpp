@@ -6,25 +6,21 @@ using namespace std;
 int main ()
 {
     ifstream ifs;
-    int empID;
-    string emNM;
-    string emDP;
+    string text;
     double salary;
 
     ifs.open("EmployeeRecord.txt");
     if (ifs.fail() ) 
     {
         cerr << "File open error\n";
-        exit (0);
+        exit (0);    
     }
-    
-    while(!ifs.eof())
+    while(ifs >> text)
     {
-        cout << "ID: " << empID<< endl;
-        cout << "Name: " << emNM << endl;
-        cout << "Department: " << emDP << endl;
-        cout << "Salary: " << salary << endl;
+        cout << text<<endl;
     }
+
+
     
-//
+
 }
