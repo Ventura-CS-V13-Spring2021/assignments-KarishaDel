@@ -2,7 +2,6 @@
 #include <fstream>
 using namespace std;
 
-
 int main ()
 {
     ifstream ifs;
@@ -10,26 +9,26 @@ int main ()
     string emNM;
     string emDP;
     double salary;
-    bool done {false};
-    string text;
-
+    int emamt;
     ifs.open("EmployeeRecord.txt");
-    while(!done)
+
+    cout << "How many files would you like to compare?" << endl;
+    cin >> emamt;
+    
+    for(int i; i < emamt; i++)
     {
-        if(ifs >> text)
-        {
+        ifs >> empID;
+        ifs >> emNM;
+        ifs >> emDP;
+        ifs >> salary;
         cout << "ID: " << empID<< endl;
         cout << "Name: " << emNM << endl;
         cout << "Department: " << emDP << endl;
-        cout << "Salary: " << salary << endl;
-        }
-        else
-        {
-            cout<<"done"<<endl;
-            done = true;
-        }
+        cout << "Salary: " << salary << endl; 
     }
-
     
+ 
+        
 
 }
+
