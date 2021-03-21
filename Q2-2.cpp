@@ -14,12 +14,9 @@ int main()
     {
        randum = rand() % 100;  
        cout << randum << endl;
-
-       if(randum > max);
-        max = randum;
-       
-       if(randum > ) 
-
     }
+
+   
+    
      
 }
