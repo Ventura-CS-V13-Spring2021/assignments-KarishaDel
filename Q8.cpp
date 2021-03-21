@@ -15,20 +15,21 @@ int main()
 
 	ERfile.open("EmployeeRecord.txt");
 
-    cout << "Hoaw many";
+    cout << "How many employees?" << endl;
     cin >> emamt;
+    
 for (int i; i < emamt; i++)
     {
-        cout << "id"<< endl;
+        cout << "ID: "<< endl;
         cin >> empID;
         ERfile << empID<< endl;
-        cout << "name" << endl;
+        cout << "Name: " << endl;
         cin >> emNM;
         ERfile << emNM<< endl;
-        cout << "dep" << endl;
+        cout << "Department: " << endl;
         cin >> emDP;
         ERfile << emDP<< endl;
-        cout << "sala" << endl;
+        cout << "Salary: " << endl;
         cin >> salary;
         ERfile << salary<< endl; 
     }
