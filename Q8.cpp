@@ -21,16 +21,16 @@ for (int i; i < emamt; i++)
     {
         cout << "id"<< endl;
         cin >> empID;
-        ERfile << empID;
+        ERfile << empID<< endl;
         cout << "name" << endl;
         cin >> emNM;
-        ERfile << emNM;
+        ERfile << emNM<< endl;
         cout << "dep" << endl;
         cin >> emDP;
-        ERfile << emDP;
+        ERfile << emDP<< endl;
         cout << "sala" << endl;
         cin >> salary;
-        ERfile << salary; 
+        ERfile << salary<< endl; 
     }
 
 
