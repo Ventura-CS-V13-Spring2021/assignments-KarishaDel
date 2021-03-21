@@ -27,6 +27,7 @@ for (int i; i < emamt; i++)
         cin >> emDP;
         cout << "sala" << endl;
         cin >> salary;
+        
     }
 
 
