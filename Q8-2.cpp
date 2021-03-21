@@ -6,7 +6,6 @@ using namespace std;
 int main ()
 {
     ifstream ifs;
-    int emamt;
     int empID;
     string emNM;
     string emDP;
@@ -19,5 +18,24 @@ int main ()
         exit (0);
     }
     
+    ifs >> empID;
+    if (ifs.fail())
+    {
+        cerr << "Read Erro Name\n";
+    }
+    ifs >> emDP;
+    if (ifs.fail())
+    {
+        cerr << "Read Error Salary\n";
+    }
 
+    ifs >> salary;
+    if (ifs.fail())
+    {
+        cerr << "Read Error Salary\n";
+    }
+    cout << "Emp ID" << empID<< endl;
+    cout << "Name: " << emNM << endl;
+    cout << "DP: " << emDP << endl;
+    cout << "Salary: " << salary << endl;
 }
