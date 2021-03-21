@@ -8,7 +8,24 @@ int main()
      cout << "Enter three integer values : " ;
      cin >> number1 >> number2 >> number3 ;
 
-        if (number1 == number2 || number1 == number3 || number2 == number3)
+        if(number1 == number2)
         {
-            cout << "No equal numbers.";
+            cout << number1 << " and " << number2;
         } 
+
+        if(number2 == number3)
+        {
+            cout << number2 << " and " << number3;
+        } 
+
+        if(number3 == number1)
+        {
+            cout << number3 << " and " << number1;
+        }
+
+        
+        {
+            cout << "None are equal.";
+        }
+     return 0;
+}
