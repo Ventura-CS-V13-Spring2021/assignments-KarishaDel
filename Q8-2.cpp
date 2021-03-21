@@ -20,32 +20,11 @@ int main ()
     
     while(!ifs.eof())
     {
-        ifs >> empID;
-        if (ifs.fail())
-        {
-            cerr << "Read Erro ID\n";
-        }
-
-        ifs >> emNM;
-        if (ifs.fail())
-        {
-            cerr << "Read Erro Name\n";
-        }
-
-        ifs >> emDP;
-        if (ifs.fail())
-        {
-        cerr << "Read Error DP\n";
-        }
-
-        ifs >> salary;
-        if (ifs.fail())
-        {
-            cerr << "Read Error Salary\n";
-        }
+        cout << "ID: " << empID<< endl;
+        cout << "Name: " << emNM << endl;
+        cout << "Department: " << emDP << endl;
+        cout << "Salary: " << salary << endl;
     }
-    cout << "ID: " << empID<< endl;
-    cout << "Name: " << emNM << endl;
-    cout << "Department: " << emDP << endl;
-    cout << "Salary: " << salary << endl;
+    
+//
 }
