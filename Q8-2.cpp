@@ -6,20 +6,29 @@ using namespace std;
 int main ()
 {
     ifstream ifs;
-    string text;
+    int empID;
+    string emNM;
+    string emDP;
     double salary;
+    bool done {false};
+    string text;
 
     ifs.open("EmployeeRecord.txt");
-    if (ifs.fail() ) 
+    while(!done)
     {
-        cerr << "File open error\n";
-        exit (0);    
+        if(ifs >> text)
+        {
+        cout << "ID: " << empID<< endl;
+        cout << "Name: " << emNM << endl;
+        cout << "Department: " << emDP << endl;
+        cout << "Salary: " << salary << endl;
+        }
+        else
+        {
+            cout<<"done"<<endl;
+            done = true;
+        }
     }
-    while(ifs >> text)
-    {
-        cout << text<<endl;
-    }
-
 
     
 
