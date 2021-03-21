@@ -13,23 +13,16 @@ int main()
     srand(time(0));
     for (int i; i < 5; i++)
     {
-       randum = rand() % 100;  
+       randum = rand() % 100;
+        if(randum>max) 
+        max=randum;
+       if(randum<min) 
+        min=randum;  
        cout << randum << endl;               
     }
 
-    do
-    {
-       if(randum>max) 
-        max=randum;
-       if(randum<min) 
-        min=randum;
-    } while (/* condition */);
-    
-
-
-
-cout << max;
-cout << min;
+cout << max<< endl;
+cout << min << endl;
    
     
      
