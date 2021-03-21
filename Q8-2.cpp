@@ -21,12 +21,19 @@ int main ()
     ifs >> empID;
     if (ifs.fail())
     {
+        cerr << "Read Erro ID\n";
+    }
+
+    ifs >> emNM;
+    if (ifs.fail())
+    {
         cerr << "Read Erro Name\n";
     }
+
     ifs >> emDP;
     if (ifs.fail())
     {
-        cerr << "Read Error Salary\n";
+        cerr << "Read Error DP\n";
     }
 
     ifs >> salary;
@@ -34,6 +41,7 @@ int main ()
     {
         cerr << "Read Error Salary\n";
     }
+    
     cout << "Emp ID" << empID<< endl;
     cout << "Name: " << emNM << endl;
     cout << "DP: " << emDP << endl;
