@@ -9,9 +9,9 @@ int main()
 
      cout << "Enter three integer values from 0 to 99: " ;
      cin >> number1 >> number2 >> number3 ;
-    
     if (number1< min || number2 < min || number3 < min  || number1> max || number2 < max || number3 > max)
     cout<< "Try again"<< endl;
+
 
     else
     {
