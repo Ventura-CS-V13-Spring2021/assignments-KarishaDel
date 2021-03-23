@@ -21,7 +21,12 @@ int main()
 			}
 			if (i == num)
 				cout << num << " is a prime number."<< endl;
-				
+						
+			else
+			{
+				cout << num << " is not a prime number." << endl;
+				done = true;
+			}	
 		
 		}
 
