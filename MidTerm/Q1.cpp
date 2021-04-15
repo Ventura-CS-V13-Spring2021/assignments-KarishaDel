@@ -3,7 +3,6 @@
 
 using namespace std;
 
-void fileWrt (ofstream &, string, int, int);
 int main()
 {
     string StdNm;
@@ -26,29 +25,16 @@ int main()
     {
         cout << "Student name?"<< endl;
         cin >> StdNm;
-   
+        StdntFile << StdNm<< endl;
         cout << "Grade 1: " << endl;
         cin >> Grd1;
-    
+        StdntFile << Grd1<< endl;
         cout << "Grade 2: " << endl;
         cin >> Grd2;
+        StdntFile << Grd2<< endl;
     }
 
-   
-} 
+    StdntFile.close();
 
-void fileWrt (ofstream &StdntFile, string &StdNm, int &Grd1, int &Grd2, int &NumStd)
-{
-    // string StdNm;
-    // int Grd1;
-    // int Grd2;
-    // int NumStd;
-        
-    for (int i; i < NumStd; i++)
-    {
-        StdntFile << StdNm<< endl;
-        StdntFile << Grd1<< endl;
-        StdntFile << Grd2<< endl;
-        StdntFile << NumStd<< endl;
-    } 
+   
 } 
