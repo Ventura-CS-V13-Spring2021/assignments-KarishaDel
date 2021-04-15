@@ -6,6 +6,11 @@ void getInput(char&, int&, int&, int&);
 void fileWrt (ofstream &, string, int);
 int main()
 {
+    char StdNm;
+    int Grd1;
+    int Grd2;
+    int NumStd;
+
     ofstream StdntFile;
     StdntFile.open("Student.txt");
     if (StdntFile.fail())
@@ -13,37 +18,42 @@ int main()
         cerr << "Error.";
         exit(0);
     }
+    getInput(StdNm, Grd1, Grd2, NumStd);
 
    
 } 
 void getInput(char &StdNm, int &Grd1, int &Grd2, int &NumStd)
 {
-    int Grd1;
-    int Grd2;
-    int NumStd;
-    int NumStd;
+    // string StdNm;
+    // int Grd1;
+    // int Grd2;
+    // int NumStd;
 
     cout << "How many student?" << endl;
     cin >> NumStd;
+
+    cout << "Student name?"<< endl;
+    cin >> StdNm;
+   
+    cout << "Grade 1: " << endl;
+    cin >> Grd1;
+    
+    cout << "Grade 2: " << endl;
+    cin >> Grd2;
+
+
 }
-
-
 void fileWrt (ofstream &StdntFile, int, int)
 {
-    string StdNm;
+    char StdNm;
     int Grd1;
     int Grd2;
     int NumStd;
         
     for (int i; i < NumStd; i++)
     {
-        cout << "Name: "<< endl;
-        cin >> StdNm;
         StdntFile << StdNm<< endl;
-        cout << "Grade 1: " << endl;
-        cin >> Grd1;
         StdntFile << Grd1<< endl;
-        cout << "Grade 2: " << endl;
         StdntFile << Grd2<< endl;
     } 
 } 
