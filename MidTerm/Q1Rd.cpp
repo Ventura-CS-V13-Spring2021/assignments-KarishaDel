@@ -15,16 +15,17 @@ int main ()
 
     ifs.open("Student.txt");
 
-while(ifs >> Grd1 >> Grd2 >> StdNm)
+while(ifs >> StdNm >> Grd1 >> Grd2)
 {
- 
-    sum = Grd1 + Grd2;
+    sum += Grd1 + Grd2;
     cout << "Name: " << StdNm<< endl;
     cout << "Grade 1: " << Grd1 << endl;
+    count ++;
     cout << "Grade 2: " << Grd2 << endl;
+    count ++;
 }
+    cout << sum << count << endl;
     cout << "Total: " << sum << endl;
-    cout << count << endl;
-    avg = sum/10;
+    avg = sum/count;
     cout << "Avarage: " << avg << endl;
 }
