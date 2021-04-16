@@ -4,14 +4,16 @@
 #include <cstdlib>
 
 using namespace std;
-int FindMin(int);
+int FindMin(int, int, int);
+int FindMax(int);
 int getRnd ();
-void fileWrt (ofstream &, int, int, int);
+void fileWrt (ofstream &, int, int, int, int);
 
 int main()
 {
     int N = 3;
-    int num;
+    int num, num1, num2, num3;
+    int min;
 
     ofstream NTFile;
     NTFile.open("Three.txt");
@@ -22,12 +24,14 @@ int main()
     }
 
     srand(time(0));
-    while(1)
     {
-        num = getRnd();
-        // if(FindMin (num))
-        fileWrt(NTFile, num);
+        num1 = getRnd();
+        num2 = getRnd();
+        num3 = getRnd();
+        min = FindMin(num1,num2,num3);
+        fileWrt(NTFile, num1, num2, num3, min);
     }
+
         
     NTFile.close();
 } 
@@ -41,22 +45,39 @@ int getRnd()
    return num;
 } 
 
-// int FindMin (int num)
-// {
-//     static int MinNum = 0;
-    
-//     if (MinNum < num)
-//     {
-//         num = MinNum;
-//         return num;
-//     }
-//     else
-//     {
-//         MinNum = num;
-//         return 0;
-//     }
-// }
-void fileWrt(ofstream &NTFile, int num)
+int FindMin (int num1, int num2, int num3)
 {
-     NTFile << num << endl;
+    int min;
+    min = num1;
+    if(min > num2)
+    {
+        num2 = min;
+        return min;
+    }
+    else if (min > num3)
+    {
+        num3 = min;
+        return min;
+    }
+    else
+    {
+        return min;
+    }   
+                        
 }
+
+// int FindMax (int)
+// {
+
+// }
+
+void fileWrt(ofstream &NTFile, int num1, int num2, int num3, int min)
+{
+    NTFile << min << endl;
+    NTFile << num1 << endl;
+    NTFile << num2 << endl;
+    NTFile << num3 << endl;
+
+
+}
+

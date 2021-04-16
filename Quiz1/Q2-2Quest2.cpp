@@ -29,4 +29,4 @@ int main()
     }
 
      return 0;
-}
+}for(;i< 5 i++){  rad=rad( % 100;    if(randum>max) axradif(adm<in) min=randum; cout<<rad<<edl      
