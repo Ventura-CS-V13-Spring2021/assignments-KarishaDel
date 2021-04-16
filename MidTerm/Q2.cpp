@@ -4,7 +4,7 @@
 #include <cstdlib>
 
 using namespace std;
-int isGreater(int);
+//int isGreater(int);
 int getRnd ();
 
 int main()
@@ -21,21 +21,30 @@ int main()
         exit(0);
     }
 
-    for (int i = 0; i < N; i++)
+    srand(time(0));
+    for (int i; i < N; i++)
     {
         int num = getRnd();
+        NFile << num << endl;
     }
+        
+
+
     NFile.close();
 } 
 
-int isGreater()
-{
-
-}
 int getRnd()//maybe void? 
 {
-   int randum;
-   randum = rand() % 50;
+   int num;
+   num = rand() % 50;
+
+   return num;
 } 
 
+// int isGreater(int N)
+// {
+//     if (randum > max)
+//     max == randum;
+
+// }
 
