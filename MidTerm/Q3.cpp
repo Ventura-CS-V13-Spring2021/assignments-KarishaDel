@@ -5,15 +5,18 @@
 
 using namespace std;
 int FindMin(int, int, int);
-int FindMax(int);
+int FindMax(int, int, int);
+int FindDif (int, int);
 int getRnd ();
-void fileWrt (ofstream &, int, int, int, int);
+void fileWrt (ofstream &, int, int, int, int, int,int);
 
 int main()
 {
     int N = 3;
     int num, num1, num2, num3;
     int min;
+    int max;
+    int dif;
 
     ofstream NTFile;
     NTFile.open("Three.txt");
@@ -29,7 +32,9 @@ int main()
         num2 = getRnd();
         num3 = getRnd();
         min = FindMin(num1,num2,num3);
-        fileWrt(NTFile, num1, num2, num3, min);
+        max = FindMax(num1,num2,num3);
+        dif = FindDif(min,max);
+        fileWrt(NTFile, num1, num2, num3, min, max, dif);
     }
 
         
@@ -48,35 +53,75 @@ int getRnd()
 int FindMin (int num1, int num2, int num3)
 {
     int min;
-    min = num1;
-    if(min > num2)
-    {
-        num2 = min;
-        return min;
-    }
-    else if (min > num3)
-    {
-        num3 = min;
-        return min;
-    }
+    
+    if(num1 > num2)
+    min = num2;
     else
     {
-        return min;
+        min = num1;
+    }
+    if (num1 > num3)
+    min = num3;
+    else
+    {
+        min = num1;
+    }
+    if(num2 > num3)
+    min = num3;
+    else
+    {
+        min = num2;
     }   
-                        
+    
+
+    return min;
 }
 
-// int FindMax (int)
-// {
-
-// }
-
-void fileWrt(ofstream &NTFile, int num1, int num2, int num3, int min)
+int FindMax (int num1, int num2, int num3)
 {
-    NTFile << min << endl;
+    
+    int max;
+    
+    if(num1 < num2)
+    max = num2;
+    else
+    {
+        max = num1;
+    }
+    if (num1 < num3)
+    max = num3;
+    else
+    {
+        max = num1;
+    }
+    if(num2 < num3)
+    max = num3;
+    else
+    {
+        max = num2;
+    }   
+
+    return max;
+
+}
+int FindDif (int min, int max)
+{
+    int dif;
+    dif = max - min;
+    return dif;
+
+}
+
+void fileWrt(ofstream &NTFile, int num1, int num2, int num3, int min, int max, int dif)
+{
+    
     NTFile << num1 << endl;
     NTFile << num2 << endl;
     NTFile << num3 << endl;
+    NTFile << "Min: " << min << endl;
+    NTFile << "Max: " << max << endl;
+    NTFile << "Difference: " << dif << endl;
+
 
 
 }
