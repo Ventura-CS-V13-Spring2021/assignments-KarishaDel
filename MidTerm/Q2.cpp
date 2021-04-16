@@ -59,4 +59,4 @@ int isGreater(int num)
 
 /* First I created the number generator using the libraries. I created two functions one to get the randum number then one to compare
 the numbers to its preciding number. A problem I ran into to that it was not giving me a steady increasing number line. I was getting
-36, 32, 16 then 37. I kept getting the first number included in the list. 
+36, 32, 16 then 37. I kept getting the first number included in the list. */
