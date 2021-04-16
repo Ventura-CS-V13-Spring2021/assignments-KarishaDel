@@ -6,11 +6,13 @@
 using namespace std;
 int FindMin(int);
 int getRnd ();
+void fileWrt (ofstream &, int, int, int);
 
 int main()
 {
     int N = 3;
-    
+    int num;
+
     ofstream NTFile;
     NTFile.open("Three.txt");
     if (NTFile.fail())
@@ -20,24 +22,41 @@ int main()
     }
 
     srand(time(0));
-    for (int i; i < N; i++)
+    while(1)
     {
-        int num = getRnd();
-        NTFile << num << endl;
+        num = getRnd();
+        // if(FindMin (num))
+        fileWrt(NTFile, num);
     }
         
     NTFile.close();
 } 
 
 
-int getRnd()//maybe void? 
+int getRnd() 
 {
    int num;
-   num = rand() % 10 + (0);
+   num = rand() % 9;
     cout << num << endl;
    return num;
 } 
-int findMin (int)
-{
+
+// int FindMin (int num)
+// {
+//     static int MinNum = 0;
     
+//     if (MinNum < num)
+//     {
+//         num = MinNum;
+//         return num;
+//     }
+//     else
+//     {
+//         MinNum = num;
+//         return 0;
+//     }
+// }
+void fileWrt(ofstream &NTFile, int num)
+{
+     NTFile << num << endl;
 }
