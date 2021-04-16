@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 
-string comp (int, float);
+
 int main ()
 {
     ifstream ifs;
@@ -13,7 +13,7 @@ int main ()
     double sum = 0.0;
     float avg;
     int beat = 80;
-    string result;
+    int count = 0;
 
     ifs.open("Student.txt");
 
@@ -24,22 +24,12 @@ while(ifs >> StdNm >> Grd1 >> Grd2)
     cout << "Grade 1: " << Grd1 << endl;
     cout << "Grade 2: " << Grd2 << endl;
     avg = sum/2;
-    cout << "Avarage: " << avg << endl;    
+    cout << "Avarage: " << avg << endl;  
 }
-
-while(1)
+if (avg > beat)
 {
-    result = comp(beat, avg);
- 
-}
-
-string comp(int , float)
-{
-    int beat = 80;
-    float avg;
-
-    if (beat < avg)
     cout << StdNm;
 }
 
 }
+
