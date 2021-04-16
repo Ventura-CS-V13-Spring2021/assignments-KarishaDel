@@ -20,11 +20,22 @@ int main()
         cerr << "Error.";
         exit(0);
     }
-    NFile.close();
 
-   
+    for (int i = 0; i < N; i++)
+    {
+        int num = getRnd();
+    }
+    NFile.close();
 } 
-void getRnd(int)
+
+int isGreater()
 {
-    return
+
+}
+int getRnd()//maybe void? 
+{
+   int randum;
+   randum = rand() % 50;
 } 
+
+
