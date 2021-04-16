@@ -8,7 +8,7 @@ int FindMin(int, int, int);
 int FindMax(int, int, int);
 int FindDif (int, int);
 int getRnd ();
-void fileWrt (ofstream &, int, int, int, int, int,int);
+void fileWrt (ofstream &, int, int, int, int, int, int);
 
 int main()
 {
@@ -72,7 +72,6 @@ int FindMin (int num1, int num2, int num3)
     {
         min = num2;
     }   
-    
 
     return min;
 }
