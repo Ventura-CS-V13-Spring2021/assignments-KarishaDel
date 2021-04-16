@@ -1,6 +1,0 @@
-0
-2
-7
-Min: 2
-Max: 7
-Difference: 5

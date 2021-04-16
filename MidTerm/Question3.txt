@@ -1,0 +1,6 @@
+8
+7
+0
+Min: 0
+Max: 8
+Difference: 8
