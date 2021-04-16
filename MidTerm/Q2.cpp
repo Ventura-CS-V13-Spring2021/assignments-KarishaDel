@@ -10,8 +10,7 @@ int getRnd ();
 int main()
 {
     int N = 10;
-    int min = 1;
-    int max = 50;
+
 
     ofstream NFile;
     NFile.open("Numbers.txt");
@@ -39,7 +38,7 @@ int getRnd()//maybe void?
 {
    int num;
    num = rand() % 50;
-
+    cout << num << endl;
    return num;
 } 
 
@@ -47,11 +46,16 @@ int isGreater(int num)
 {
     static int preceding = 0;
 
-    for (preceding < num)
+    if (preceding < num)
     {
         preceding = num;
-        max == num;
+        return num;
     }
-    return num;
+    else
+    {
+        preceding = num;
+        return 0;
+    }
+
 }
 
