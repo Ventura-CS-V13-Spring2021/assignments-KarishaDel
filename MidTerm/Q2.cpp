@@ -4,7 +4,7 @@
 #include <cstdlib>
 
 using namespace std;
-//int isGreater(int);
+int isGreater(int);
 int getRnd ();
 
 int main()
@@ -25,6 +25,8 @@ int main()
     for (int i; i < N; i++)
     {
         int num = getRnd();
+        if(isGreater(num))
+
         NFile << num << endl;
     }
         
@@ -41,10 +43,15 @@ int getRnd()//maybe void?
    return num;
 } 
 
-// int isGreater(int N)
-// {
-//     if (randum > max)
-//     max == randum;
+int isGreater(int num)
+{
+    static int preceding = 0;
 
-// }
+    for (preceding < num)
+    {
+        preceding = num;
+        max == num;
+    }
+    return num;
+}
 
