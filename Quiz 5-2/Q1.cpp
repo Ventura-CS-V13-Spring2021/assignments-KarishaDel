@@ -25,4 +25,4 @@ int main()
 }
 /* After watching all the videos I was able to figure this one out fairly quickly.
 By creating a new for loop I was able to assing the results from 490 - number to diff.
-*/
+then print.*/
