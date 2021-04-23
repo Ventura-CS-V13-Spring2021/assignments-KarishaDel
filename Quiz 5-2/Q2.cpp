@@ -33,7 +33,7 @@ void printarray(int num[], int size)
 void findmatchnum(int num1[], int size1, int num2[], int size2)
 {
     int i,j;
-    int count =0;
+    int count=0;
     int match;
 
     for(int i = 0; i < size1; i++)
@@ -42,16 +42,15 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
         {
             if (num2[i] == num1[j])
             {
-                cout << num2[i] << endl;
+                num2[i] != 
                 count++;
-                cout << " - " << count << endl;
                 break;
             }
         }
     }
    
-    //cout << "The number of matched elements "  << match << endl;
-}
+    cout << " - " << count << endl;
+}    
 /* I am currently having trouble counting each individual match. I can display all the 
 duplicates but I can't seem to find a way to display the TOTAL amount of duplicates
 */
