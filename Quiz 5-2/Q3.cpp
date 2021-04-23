@@ -30,6 +30,9 @@ void printbinary(int num[], int size)
 void count0cluster(int bin[], int size)
 {
     int count = 0; 
+   
+    if (bin[0] == 0) //it kept skipping the first 0
+        count++;
     
     for (int i = 1; i < size; ++i)
     {
@@ -38,3 +41,7 @@ void count0cluster(int bin[], int size)
     }    
   cout << count << endl;
 }
+/* I used a forloop for this one. I also used the && statements bc we had to make sure that
+that we didnt count ALL the 0 in the array.
+the if statement was added in last since i kept skipping the first 0 so i had one
+less cluster. I also added in the two libraries to make the randum generator work.*/
