@@ -31,24 +31,10 @@ void printarray(int num[], int size)
     cout << endl;
 }
 void findmatchnum(int num1[], int size1, int num2[], int size2)
-{
-    int i,j;
-    int count=0;
-    int match;
+{ //try to remove duplicates
+    
 
-    for(int i = 0; i < size1; i++)
-    {
-        for(int j = 0; j < size2; j++)
-        {
-            if (num2[i] == num1[j])
-            {
-                count++;
-                break;
-            }
-        }
-    }
    
-    cout << " - " << count << endl;
 }    
 /* I am currently having trouble counting each individual match. I can display all the 
 duplicates but I can't seem to find a way to display the TOTAL amount of duplicates--FIXED
