@@ -40,7 +40,7 @@ void print(int n[], int N)
 int calc(int n[], int N, int)
 {
     int avg;
-    int sum;
+    int sum = 0; //gotta initialize with 0 cause itll add 10 for some reason
 
     for (int i=0; i < N; i++)
     {
@@ -53,4 +53,4 @@ int calc(int n[], int N, int)
     cout << avg << endl;
     return avg;     
 }
-//Professor. When its time to do my sums it add 10 to the result. I dont know where it is coming from.
+//adds 10 to sum. no idea why. FIXED
