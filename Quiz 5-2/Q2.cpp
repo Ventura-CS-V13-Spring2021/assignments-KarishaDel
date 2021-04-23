@@ -34,16 +34,15 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
 {
     int i,j;
     int match;
-    int count =0;
 
     for(int i = 0; i < size1; i++)
     {
         for(int j = 0; j < size2; j++)
         {
             if (num2[i] == num1[j])
-            {   
-                count++;
-                cout << count << "dup" << endl;
+            {
+                cout << "dup" << endl;
+                break;
             }
         }
     }
