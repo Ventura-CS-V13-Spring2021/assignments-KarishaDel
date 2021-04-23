@@ -19,7 +19,10 @@ int main()
 
     for(int i = 0; i < SIZE; i++) //to add the new values of the diff[] array
     {
-
+        diff[i] = 490 - numbers[i];
+        cout << diff[i] << endl;
     }
 }
-/* Ti didnt
+/* After watching all the videos I was able to figure this one out fairly quickly.
+By creating a new for loop I was able to assing the results from 490 - number to diff.
+*/
