@@ -42,7 +42,6 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
         {
             if (num2[i] == num1[j])
             {
-                num2[i] != 
                 count++;
                 break;
             }
