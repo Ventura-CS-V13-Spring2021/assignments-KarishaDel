@@ -1,4 +1,7 @@
 #include    <iostream>
+#include    <cstdlib>
+#include    <ctime>
+
 using namespace std;
 void makebinary(int [], int);
 void printbinary(int [], int);
@@ -27,7 +30,11 @@ void printbinary(int num[], int size)
 void count0cluster(int bin[], int size)
 {
     int count = 0; 
-
-    for (int i = 0; i < size; ++i)    
-  
+    
+    for (int i = 1; i < size; ++i)
+    {
+        if(bin[i] == 0 && bin[i-1] != 0)
+        count++;
+    }    
+  cout << count << endl;
 }

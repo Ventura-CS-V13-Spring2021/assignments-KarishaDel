@@ -51,5 +51,6 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
     cout << " - " << count << endl;
 }    
 /* I am currently having trouble counting each individual match. I can display all the 
-duplicates but I can't seem to find a way to display the TOTAL amount of duplicates
+duplicates but I can't seem to find a way to display the TOTAL amount of duplicates--FIXED
+Now I can't seem to get it to count EACH match only once.
 */
