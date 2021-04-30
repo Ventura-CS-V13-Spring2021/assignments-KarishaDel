@@ -1,3 +1,5 @@
+//Make a program that determines whether all elements are in sorted order
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

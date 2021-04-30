@@ -1,3 +1,6 @@
+//NOT COMPLETED
+//Make a program that finds the row which has maximum summation value in the 2D array
+
 #include <iostream>
 #include <iomanip>
 using namespace std;

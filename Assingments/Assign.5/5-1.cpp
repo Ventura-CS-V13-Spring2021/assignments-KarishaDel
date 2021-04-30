@@ -1,3 +1,5 @@
+//Make a program that calculates a summation and average of all elements in the array
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
