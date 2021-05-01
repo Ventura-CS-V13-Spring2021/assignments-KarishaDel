@@ -2,5 +2,12 @@
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
         "ostream": "cpp"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\karis\\OneDrive\\Desktop\\VS Folders\\CS13\\Quiz\\assignments-KarishaDel-main\\assignments-KarishaDel\\Assingments\\Assing.6",
+            "binaryPath": "c:\\Users\\karis\\OneDrive\\Desktop\\VS Folders\\CS13\\Quiz\\assignments-KarishaDel-main\\assignments-KarishaDel\\Assingments\\Assing.6\\main.exe",
+            "binaryArgs": []
+        }
+    ]
 }
