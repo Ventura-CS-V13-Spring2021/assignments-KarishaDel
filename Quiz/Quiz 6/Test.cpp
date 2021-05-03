@@ -19,7 +19,7 @@ class IntegerArray
         void printAll(void) const;
         void fillUp(void);
         void sortArray(int flag);
-        void getPrimenumbers(void) const;
+        // void getPrimenumbers(void) const;
 
 };
 //------------------------------------------------------------
@@ -47,18 +47,20 @@ void IntegerArray::fillUp(void)
 
 }
 
-void sortArray(int flag)
+void IntegerArray::sortArray(int flag)
 {
-    while (flag == 0)
+    if (flag == 0)
     {
-        
+        sort(numbers, numbers + length);
     }
+
+    sort(numbers, numbers + length, greater<int>());
 }
 
-void getPrimenumbers(void)
-{
+// void getPrimenumbers(void)
+// {
 
-}
+// }
 //-------------------------------------------------------------------
 int main()
 
@@ -77,5 +79,5 @@ int main()
     N.sortArray(1);
     N.printAll();
 
-    cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
+    // cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
 } 
