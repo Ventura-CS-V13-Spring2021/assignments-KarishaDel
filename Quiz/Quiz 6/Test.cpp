@@ -50,16 +50,17 @@ void IntegerArray::fillUp(void)
 void IntegerArray::sortArray(int flag)
 {
 
-    while(flag == 0)
+    if(flag == 0)
     {
         sort(numbers, numbers + length); //sort does acending be default so no change is needed
     }
 
-    while (flag == 1)
+    if(flag == 1)
     {
         sort(numbers, numbers + length, greater<int>()); //puts the larger element before
     }    
 }
+//had to use an if statement!
 
 // void getPrimenumbers(void)
 // {
