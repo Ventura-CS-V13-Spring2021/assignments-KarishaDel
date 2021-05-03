@@ -1,0 +1,8 @@
+make.exe buildall --dry-run --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/karis/OneDrive/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 6'
+g++    -c -o main.o main.cpp
+ 
+g++    -c -o IntegerArray.o IntegerArray.cpp
+g++ -o main.exe main.o IntegerArray.o 
+make.exe: Leaving directory 'c:/Users/karis/OneDrive/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 6'
+ 

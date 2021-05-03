@@ -20,5 +20,8 @@ int main()
     N.sortArray(1);
     N.printAll();
 
-    cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
-}    
+    cout << "The number of prime numbers " << endl;
+    N.getPrimenumbers();
+    
+    
+} 
