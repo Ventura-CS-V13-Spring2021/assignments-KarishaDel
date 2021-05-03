@@ -62,9 +62,20 @@ void IntegerArray::sortArray(int flag)
 }
 //had to use an if statement!
 
-void IntegerArray::getPrimenumbers(void)
+void IntegerArray::getPrimenumbers(void) const
 {
-    
+    int j, num;
+
+    for( int i = 0; i < length; i++)
+    {
+        for(j = 2; j < numbers[i]; j++)
+        {
+            if (numbers[i]%j == 0) 
+            break;
+        }
+        if(i == )
+        //cout to print prime numbers
+    }
 }
 //-------------------------------------------------------------------
 int main()
@@ -84,6 +95,7 @@ int main()
     N.sortArray(1);
     N.printAll();
 
-    cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
+    cout << "The number of prime numbers " << endl;
+    N.getPrimenumbers();
     
 } 
