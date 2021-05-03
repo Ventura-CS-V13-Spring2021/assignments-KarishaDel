@@ -64,18 +64,27 @@ void IntegerArray::sortArray(int flag)
 
 void IntegerArray::getPrimenumbers(void) const
 {
-    int j, num;
+    int j, a;
+    int count = 0;
 
     for( int i = 0; i < length; i++)
     {
-        for(j = 2; j < numbers[i]; j++)
+        j = 2;
+        a = 1;
+        while(j<numbers[i])
         {
-            if (numbers[i]%j == 0) 
-            break;
-        }
-        if(i == )
+            if(numbers[i] % j == 0)
+            {
+                a = 0;
+                break;
+            }
+            j++;
+        }    
+        if(a == 1)
+        count ++;
         //cout to print prime numbers
     }
+    cout << count << " ";
 }
 //-------------------------------------------------------------------
 int main()
@@ -97,5 +106,6 @@ int main()
 
     cout << "The number of prime numbers " << endl;
     N.getPrimenumbers();
+    
     
 } 
