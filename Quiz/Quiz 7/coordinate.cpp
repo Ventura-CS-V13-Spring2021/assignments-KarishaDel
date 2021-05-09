@@ -3,10 +3,10 @@
 using namespace std;
 
 
-Coordinate::Coordinate()
-{
-    
-}
+// Coordinate::Coordinate()
+// {
+
+// }
 Coordinate::Coordinate(double xval, double yval)
 {
     xval = 0;

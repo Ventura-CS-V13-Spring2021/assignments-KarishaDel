@@ -1,0 +1,318 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sat May 08 21:17:19 2021
+
+# Variables
+
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
+# automatic
+?F = $(notdir $?)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 7
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 2)
+CFLAGS = -I.
+# environment
+ONEDRIVE = C:\Users\karis\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = C:\Users\karis\AppData\Roaming\Code\CachedData\cfa2e218100323074ac1948c885448fdf4de2a7f
+# environment
+TMP = C:\Users\karis\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8849b4ba-aa8e-4aac-a487-7cd65e147aaf-sock
+# environment
+VSCODE_CWD = C:\Users\karis\AppData\Local\Programs\Microsoft VS Code
+# environment
+PATH = C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7-preview\preview;C:\TDM-GCC-64\bin;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\karis\AppData\Local\Microsoft\WindowsApps;C:\Users\karis\AppData\Local\GitHubDesktop\bin;C:\Users\karis\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\karis\.dotnet\tools
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\karis
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18840_GSSNPQOIIYSMJQTN
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = DESKTOP-DUFA09G
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = karis
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-DUFA09G
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-DUFA09G
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 1)
+CC = g++
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := buildall
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\karis\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\78a9e482f7859f86fe8496cc208ae80f-1.56.0-main-sock
+# environment
+HOMEPATH = \Users\karis
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\karis\AppData\Roaming
+# environment
+TEMP = C:\Users\karis\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 3)
+DEPS = coordinate.hpp rectangle.hpp 
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 9e0d
+# environment
+VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 18840
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-DUFA09G
+# variable set hash-table stats:
+# Load=93/1024=9%, Rehash=0, Collisions=12/112=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\ProgramData\Oracle\Java\javapath (key C:/ProgramData/Oracle/Java/javapath, mtime 1619323502): 5 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1617472670): 5 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1602862655): 30 files, no impossibilities.
+# . (key c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 7, mtime 1620533838): 9 files, no impossibilities.
+# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1619903284): 61 files, no impossibilities.
+# C:\Program Files\PowerShell\7-preview\preview (key C:/Program Files/PowerShell/7-preview/preview, mtime 1610301205): 3 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1610300752): 8 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1580281394): 10 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1619330215): 113 files, no impossibilities.
+# C:\Users\karis\AppData\Local\Microsoft\WindowsApps (key C:/Users/karis/AppData/Local/Microsoft/WindowsApps, mtime 1619295179): 14 files, no impossibilities.
+# C:\Users\karis\AppData\Local\GitHubDesktop\bin (key C:/Users/karis/AppData/Local/GitHubDesktop/bin, mtime 1600302445): 4 files, no impossibilities.
+# C:\Users\karis\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/karis/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1620440325): 4 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1615662399): 170 files, no impossibilities.
+# C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0 (key C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0, mtime 1610481224): 7 files, no impossibilities.
+# C:\Users\karis\.dotnet\tools: could not be stat'd.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1610481854): 10 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1620529108): 3056 files, no impossibilities.
+
+# 3509 files, no impossibilities in 18 directories.
+
+# Implicit Rules
+
+%.o: %.c coordinate.hpp rectangle.hpp
+#  recipe to execute (from 'Makefile', line 6):
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-08 20:57:36
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+rectangle.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+buildall: main.o coordinate.o rectangle.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	$(CC) -o main main.o coordinate.o rectangle.o 
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+coordinate.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	rm -rf *.o main
+
+# Not a target:
+main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/22=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 7 (5) / strings = 3490 / storage = 52755 B / avg = 15 B
+# current buf: size = 8174 B / used = 3788 B / count = 227 / avg = 16 B
+# other used: total = 44581 B / count = 3263 / avg = 13 B
+# other free: total = 77 B / max = 34 B / min = 4 B / avg = 12 B
+
+# strcache performance: lookups = 3543 / hit rate = 1%
+# hash-table stats:
+# Load=3490/8192=43%, Rehash=0, Collisions=1205/3543=34%
+# Finished Make data base on Sat May 08 21:17:19 2021
+
+ 
+make.exe: *** No rule to make target 'all'.  Stop.
+ 

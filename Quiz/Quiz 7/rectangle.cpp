@@ -43,5 +43,8 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
 
 void Rectangle::printRectangle() const
 {
-    cout << lb.printXY() << " and " << rt.printXY() << endl;
+    cout << "Point at bottom Left: \n";
+    lb.printXY();
+    cout << "Point at top right: \n";
+    rt.printXY(); //seperate to ge rid of error line under the <<
 }

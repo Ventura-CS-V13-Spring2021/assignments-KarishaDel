@@ -1,0 +1,11 @@
+make.exe buildall --dry-run --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 7'
+g++    -c -o main.o main.cpp
+ 
+g++    -c -o coordinate.o coordinate.cpp
+ 
+g++    -c -o rectangle.o rectangle.cpp
+g++ -o main main.o coordinate.o rectangle.o 
+ 
+make.exe: Leaving directory 'c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Quiz/Quiz 7'
+ 
