@@ -9,8 +9,7 @@ using namespace std;
 // }
 Coordinate::Coordinate(double xval, double yval)
 {
-    xval = 0;
-    yval = 0;
+    setXY(xval,yval);
 }
 
 int Coordinate::getX() const
