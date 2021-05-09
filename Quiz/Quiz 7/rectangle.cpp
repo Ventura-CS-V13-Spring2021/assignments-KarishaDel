@@ -5,7 +5,8 @@ using namespace std;
 
 Rectangle::Rectangle()
 {
-
+    Coordinate x;
+    Coordinate y;
 }
 Rectangle::Rectangle(Coordinate lbval, Coordinate rtval)
 {
