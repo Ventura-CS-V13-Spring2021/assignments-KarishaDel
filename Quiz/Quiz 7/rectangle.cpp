@@ -41,8 +41,8 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
 
     area = ( rt.getX() - lb.getX() ) * (rt.getY() - lb.getY() ); //get the x and y values for both points 
     //center
-    int ct_x = (rt.getX() + lb.getX()) / 2;
-    int ct_y = (rt.getY() + lb.getY()) / 2;
+    double ct_x = (rt.getX() + lb.getX()) / 2; //change to double since we didnt use any int and we have division
+    double ct_y = (rt.getY() + lb.getY()) / 2;
     center.setXY(ct_x,ct_y); //set values to x and y
 }
 
@@ -53,6 +53,6 @@ void Rectangle::printRectangle() const
     cout << "Point at top right: \n";
     rt.printXY(); //seperate to ge rid of error line under the <<
     cout << "Area: " << area << "\n" ;
-    //cout << "Center: \n";
-    //center.printXY();
+    cout << "Center: \n";
+    center.printXY();
 }
