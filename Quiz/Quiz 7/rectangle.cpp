@@ -10,7 +10,8 @@ Rectangle::Rectangle()
 }
 Rectangle::Rectangle(Coordinate lbval, Coordinate rtval)
 {
-
+    lbval = ;
+    rtval = 0;
 }
 
 Coordinate Rectangle::getLB() const

@@ -8,7 +8,7 @@ private:
 
 public:
     Coordinate() : x(0), y(0) {}; //initilize to 0
-    Coordinate(double xval, double yval) : xval(x), yval(y) {};
+    Coordinate(double xval, double yval);
     int getX() const;
     int getY() const;
     void setXY(double xval, double yval);
