@@ -7,10 +7,11 @@ Rectangle::Rectangle()
 {
     Coordinate x;
     Coordinate y;
+    setLBRT(x,y);
 }
 Rectangle::Rectangle(Coordinate lbval, Coordinate rtval)
 {
-
+    setLBRT(lbval,rtval); //IDE recomended that I use the lbval and rtval instead of x and y so it can pull from line 37
 }
 
 Coordinate Rectangle::getLB() const
