@@ -10,8 +10,7 @@ Rectangle::Rectangle()
 }
 Rectangle::Rectangle(Coordinate lbval, Coordinate rtval)
 {
-    lbval = ;
-    rtval = 0;
+
 }
 
 Coordinate Rectangle::getLB() const
@@ -39,9 +38,10 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
     lb = lbval;
     rt = rtval;
 
+    area = ( rt.getX() - lb.getX() ) * (rt.getY() - lb.getY() ); //get the x and y values for both points 
 }
 
 void Rectangle::printRectangle() const
 {
-
+    cout << lb.printXY() << " and " << rt.printXY() << endl;
 }
