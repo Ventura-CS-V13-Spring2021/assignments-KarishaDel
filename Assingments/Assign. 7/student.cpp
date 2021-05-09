@@ -12,19 +12,26 @@ using namespace std;
 
 // }
 
-Student::Student(string stname, int idnum, DOB date, Address addr)
+// Student::Student(string stname, int idnum, DOB date, Address addr)
+// {
+//     cout << "Hi" << endl;
+//     sname = stname;
+//     cout << sname;
+//     id = idnum;
+//     dob = date;
+//     address = addr;
+//     cout << sname << " " << id;
+//     cout << dob.getMonth() << endl;
+//     cout << addr.getStreet() << endl;
+// }
+
+Student::Student() : sname("noname"), id(0), dob(1, 1, 1900), address("NA", "NA", 0)
 {
-    cout << "Hi" << endl;
-    sname = stname;
-    cout << sname;
-    id = idnum;
-    dob = date;
-    address = addr;
-    cout << sname << " " << id;
-    cout << dob.getMonth() << endl;
-    cout << addr.getStreet() << endl;
 }
-   
+Student::Student(string stname, int idnum, DOB date, Address addr) : sname(stname), id(idnum), dob(date), address(addr)
+{
+}
+
 int Student::getID() const
 {
     return id;

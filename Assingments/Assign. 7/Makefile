@@ -6,6 +6,6 @@ DEPS = address.hpp DOB.hpp student.hpp #CHANGE
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 buildall: main.o DOB.o address.o student.o #CHANGE 8 AND 9
-	$(CC) -o main.exe main.o DOB.o address.o student.o 
+	$(CC) -o main main.o DOB.o address.o student.o 
 clean:
-	bin/rm -rf *.o a.out 
+	rm -rf *.o main

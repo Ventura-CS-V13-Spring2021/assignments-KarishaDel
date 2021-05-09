@@ -20,7 +20,8 @@ private:
    Address address;
 
 public:
-   Student() : sname(NULL), id(0) {} ;
+//    Student() : sname(NULL), id(0) {} ;
+   Student() ;
    Student(string stname, int idnum, DOB date, Address addr);
    int getID() const;
    string getSname() const;
