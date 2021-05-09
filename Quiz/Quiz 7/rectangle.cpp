@@ -40,6 +40,10 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
     rt = rtval;
 
     area = ( rt.getX() - lb.getX() ) * (rt.getY() - lb.getY() ); //get the x and y values for both points 
+    //center
+    int ct_x = (rt.getX() + lb.getX()) / 2;
+    int ct_y = (rt.getY() + lb.getY()) / 2;
+    center.setXY(ct_x,ct_y); //set values to x and y
 }
 
 void Rectangle::printRectangle() const
