@@ -5,7 +5,7 @@ using namespace std;
 
 Coordinate::Coordinate()
 {
-
+    
 }
 Coordinate::Coordinate(double xval, double yval)
 {
