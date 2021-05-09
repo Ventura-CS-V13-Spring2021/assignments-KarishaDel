@@ -48,4 +48,7 @@ void Rectangle::printRectangle() const
     lb.printXY();
     cout << "Point at top right: \n";
     rt.printXY(); //seperate to ge rid of error line under the <<
+    cout << "Area: " << area << "\n" ;
+    //cout << "Center: \n";
+    //center.printXY();
 }
