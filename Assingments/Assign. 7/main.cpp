@@ -42,3 +42,7 @@ int main()
 
 
 }
+/* I could not get this code to run. I kept getting a logic error when i tried 
+to make the program flexible vs. hardcoding it like line 14 in student.cpp. 
+Besides that i was able to create the functions and link all three .hpp and .cpp
+files together. */
