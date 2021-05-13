@@ -14,13 +14,11 @@ int main()
     int length= sizeof(a)/sizeof(a[0]); //cant use const becasue the size can change
     int count = 1; // since it started at 0 but we need it to strat at 1
 
-
+    cout << "N" << " " << "Count " << endl;
     sort(a, a + length, greater<int>()); //sort with algotithm
     for(int i = 0; i < length; i++)
     {
-        cout << setw(2) << a[i] << "\n";
-    }
-     cout << endl;
+       // cout << setw(2) << a[i] << "\n";
 
 //count copies
     for(int i = 0; i < length-1; i++)
@@ -31,11 +29,13 @@ int main()
         }
         else
         {
-            cout << a[i] << " there is: " << count << endl;
+            // cout << a[i] << " there is: " << count << endl;
             count = 1;
         }
     }
 
+    cout << a[i] << "   " << count << "\n";
+    }
 
 }
 /*I first tried to use the N const but noticed that we had to keep the array flexible.
