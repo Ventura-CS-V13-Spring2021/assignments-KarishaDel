@@ -59,5 +59,7 @@ int getNumDiv(int a[], int div, int length)
     }
     return count-1; //too long by 1
 }
-
+/* The program first prints the array, then starts the loop to compare the amount of factors each number has. 
+it pulls this information from the function on line 51. I thought we needed to sort in the program
+and find the max among the numbers so ignore that. Once i re read the instructions the program came together.*/
 
