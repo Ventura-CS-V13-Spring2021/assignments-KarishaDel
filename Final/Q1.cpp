@@ -5,22 +5,28 @@ Find the element that has the greatest number of divisible elements(the number o
 
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
 
 using namespace std;
 
 int getNumDiv(int div, int a[], int N); //needed the N for the lenght of the array, div will be the devider
 void max(int N, int a[]);
+// void sortAcs(int a[], int length);
 
 int main()
 {
     const int N = 6;
     int a[N] = {5,6,24,22,8,100};
+    int length = sizeof(a)/sizeof(a[0]); //get the length
 
     cout << "Number List: \n"; //print the array
     for(int i = 0; i < N; i++)
     {
         cout << a[i] << " ";
     }
+
+    max(N, a);
+    // sortAcs(a, length);
 
 }
 
@@ -48,3 +54,8 @@ void max(int N, int a[])
     }
     cout << "Max in list: " << num << endl;
 }
+
+// void sortAsc(int a[] , int length )
+// {
+//     sort(a , a + length);
+// }
