@@ -31,6 +31,16 @@ int main()
     for (int i = 0; i < N; i++)
     {
         num = getNumDiv( div, a, N);
+
+        if(i==0)
+        {
+            max = num;
+        }
+        else if(max < num)
+        {
+            max = num;
+        }
+        cout << "Most Factors: " << max;
     }
 
 
