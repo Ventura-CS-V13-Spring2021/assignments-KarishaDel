@@ -15,12 +15,12 @@ int getNumDiv(int a[], int div, int length); //needed the N for the lenght of th
 int main()
 {
     //const int N = 6; //dont need since the length is hard coded into the array
-    int a[6] = {5,6,4,8,9,24};
+    int a[6] = {1, 2, 4, 6, 10, 30};
     int length = sizeof(a)/sizeof(a[0]); //get the length
     int max = 0;
     int num;
     int div;
-    int ph; //place holder
+    int ph; //place holder for index spot
 
     cout << "Number List: \n"; //print the array
     for(int i = 0; i < length; i++)
@@ -57,7 +57,7 @@ int getNumDiv(int a[], int div, int length)
         if(div % a[i] == 0)
         count++;
     }
-    return count; //missing a factor
+    return count-1; //too long by 1
 }
 
 
