@@ -28,4 +28,4 @@ class Student
 #endif
 /* I ended up removing the parameters in line 21. I didnt use them in the program and it 
 was coausing conflicts with my student.cpp. Since the program didnt have alot of information
-I didn see the need to create anyother variables. */
+I didn see the need to create anyother variables. I also started the constructer in the .hpp vs the .cpp*/
