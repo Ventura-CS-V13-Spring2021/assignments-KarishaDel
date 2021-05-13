@@ -38,3 +38,8 @@ int main()
 
 
 }
+/*I first tried to use the N const but noticed that we had to keep the array flexible.
+the count kept starting at 0 so i had it start at 1.
+I used the sort algo to sort the array then a for loop to compare each element of the array to the next and find all the duplicates.
+I used the else statement and set count to 1 becasue that meants that it went thru the loop and didnt find any 
+duplicates. I am still working on the distance part. */
