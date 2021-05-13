@@ -9,28 +9,28 @@ Find the element that has the greatest number of divisible elements(the number o
 
 using namespace std;
 
-int getNumDiv(int a[], int div, int N); //needed the N for the lenght of the array, div will be the devider
+int getNumDiv(int a[], int div, int length); //needed the N for the lenght of the array, div will be the devider
 
 
 int main()
 {
-    const int N = 6;
-    int a[N] = {5,6,4,8,9,24};
-    // int length = sizeof(a)/sizeof(a[0]); //get the length
+    //const int N = 6; //dont need since the length is hard coded into the array
+    int a[6] = {5,6,4,8,9,24};
+    int length = sizeof(a)/sizeof(a[0]); //get the length
     int max = 0;
     int num;
     int div;
     int ph; //place holder
 
     cout << "Number List: \n"; //print the array
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < length; i++)
     {
         cout << a[i] << " ";
     }
 
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < length; i++)
     {
-        num = getNumDiv( a, div, N);
+        num=getNumDiv( a, a[i], length); //DONT HAVE SPACES IN THE FUNCTION CALL
 
         if(i==0)
         {
@@ -44,15 +44,15 @@ int main()
         }
 
     }
-    cout << "Most Factors: " << a[ph] << "How many factors: "<< max;
+    cout << "Most Factors: " << a[ph] << "\nHow many factors: "<< max;
 
 }
 
-int getNumDiv(int a[], int div, int N)
+int getNumDiv(int a[], int div, int length)
 {
     int count = 0; 
 
-    for (int i = 0; i < N; i++) // to loop thru the array
+    for (int i = 0; i < length; i++) // to loop thru the array
     {
         if(div % a[i] == 0)
         count++;
