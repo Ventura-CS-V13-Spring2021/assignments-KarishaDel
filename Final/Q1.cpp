@@ -9,18 +9,17 @@ Find the element that has the greatest number of divisible elements(the number o
 
 using namespace std;
 
-int getNumDiv(int div, int a[], int N); //needed the N for the lenght of the array, div will be the devider
+int getNumDiv(int a[], int div, int N); //needed the N for the lenght of the array, div will be the devider
 
 
 int main()
 {
     const int N = 6;
-    int a[N] = {5,6,8,24,30,100};
+    int a[N] = {5,6,4,8,9,24};
     // int length = sizeof(a)/sizeof(a[0]); //get the length
-    int max;
+    int max = 0;
     int num;
     int div;
-
 
     cout << "Number List: \n"; //print the array
     for(int i = 0; i < N; i++)
@@ -30,7 +29,7 @@ int main()
 
     for (int i = 0; i < N; i++)
     {
-        num = getNumDiv( div, a, N);
+        num = getNumDiv( a, div, N);
 
         if(i==0)
         {
@@ -40,13 +39,13 @@ int main()
         {
             max = num;
         }
-        cout << "Most Factors: " << max;
-    }
 
+    }
+    cout << "Most Factors: " << max;
 
 }
 
-int getNumDiv(int div, int a[], int N)
+int getNumDiv(int a[], int div, int N)
 {
     int i; 
 
