@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue May 11 19:09:42 2021
+# Make data base, printed on Wed May 12 18:03:27 2021
 
 # Variables
 
@@ -46,10 +46,11 @@ CFLAGS = -I.
 # environment
 ONEDRIVE = C:\Users\karis\OneDrive
 # environment
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS 
-;.JSE;.WSF;.WSH;.MSC
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = C:\Users\karis\AppData\Roaming\Code\CachedData\e713fe9b05fc24facbec8f34fb1017133858842b
 # environment
@@ -61,7 +62,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-865f915a-ef9a-44da-9aab-bffc75fe38cb-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9ff83f3e-c991-4d80-8ced-09e9438a9d4b-sock
 # environment
 VSCODE_CWD = C:\Users\karis\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -85,7 +86,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14708_LTKMSNIKPSZSHEOR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3576_SJWEHQPRBWKMJFSJ
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -165,8 +166,6 @@ SYSTEMROOT = C:\WINDOWS
 # environment
 APPDATA = C:\Users\karis\AppData\Roaming
 # environment
-__COMPAT_LAYER = DetectorsAppHealth
-# environment
 TEMP = C:\Users\karis\AppData\Local\Temp
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
@@ -197,11 +196,13 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 14708
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 3576
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-DUFA09G
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=12/113=11%
+# Load=95/1024=9%, Rehash=0, Collisions=12/114=11%
 
 # Pattern-specific Variable Values
 
@@ -212,24 +213,24 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-DUFA09G
 # C:\ProgramData\Oracle\Java\javapath (key C:/ProgramData/Oracle/Java/javapath, mtime 1619323502): 5 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1617472670): 5 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1602862655): 30 files, no impossibilities.
-# . (key c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Assingments/Assing.10, mtime 1620785382): 7 files, no impossibilities.
+# . (key c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Assingments/Assing.10, mtime 1620785511): 10 files, no impossibilities.
 # C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1619903284): 61 files, no impossibilities.
 # C:\Program Files\PowerShell\7-preview\preview (key C:/Program Files/PowerShell/7-preview/preview, mtime 1610301205): 3 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1610300752): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1580281394): 10 files, no impossibilities.
 # C:\WINDOWS (key C:/WINDOWS, mtime 1619330215): 113 files, no impossibilities.
-# C:\Users\karis\AppData\Local\Microsoft\WindowsApps (key C:/Users/karis/AppData/Local/Mi 
-crosoft/WindowsApps, mtime 1620679044): 14 files, no impossibilities.
+# C:\Users\karis\AppData\Local\Microsoft\WindowsApps (key C:/Users/karis/AppData/Local/Microsoft/WindowsApps, mtime 1620679044): 14 files, no impossibilities.
 # C:\Users\karis\AppData\Local\GitHubDesktop\bin (key C:/Users/karis/AppData/Local/GitHubDesktop/bin, mtime 1600302445): 4 files, no impossibilities.
 # C:\Users\karis\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/karis/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1620770003): 4 files, no impossibilities.
-# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1615662399): 170 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/Sys 
+tem32/Wbem, mtime 1615662399): 170 files, no impossibilities.
 # C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0 (key C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0, mtime 1610481224): 7 files, no impossibilities.
 # C:\Users\karis\.dotnet\tools: could not be stat'd.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1610481854): 10 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1620768961): 3056 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1620855198): 3056 files, no impossibilities.
 
-# 3507 files, no impossibilities in 18 directories.
+# 3510 files, no impossibilities in 18 directories.
 
 # Implicit Rules
 
@@ -299,19 +300,18 @@ main.o:
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) search 
-make.exe: *** No rule to make target 'all'.  Stop.
- 
- path.
+# No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3487 / storage = 52706 B / avg = 15 B
-# current buf: size = 8174 B / used = 3711 B / count = 223 / avg = 16 B
-# other used: total = 44532 B / count = 3264 / avg = 13 B
-# other free: total = 49 B / max = 11 B / min = 5 B / avg = 8 B
+# strcache buffers: 7 (4) / strings = 3488 / storage = 52715 B / avg = 15 B
+# current buf: size = 8174 B / used = 3756 B / count = 224 / avg = 16 B
+# other used: total = 44541 B / count = 3264 / avg = 13 B
+# other free: total = 85 B / max = 34 B / min = 7 B / avg = 14 B
 
-# strcache performance: lookups = 3539 / hit rate = 1%
+# strcache performance: lookups = 3542 / hit rate = 1%
 # hash-table stats:
-# Load=3487/8192=43%, Rehash=0, Collisions=1197/3539=34%
-# Finished Make data base on Tue May 11 19:09:42 2021
+# Load=3488/8192=43%, Rehash=0, Collisions=1198/3542=34%
+# Finished Make data base on Wed May 12 18:03:27 2021
 
+ 
+make.exe: *** No rule to make target 'all'.  Stop.
  

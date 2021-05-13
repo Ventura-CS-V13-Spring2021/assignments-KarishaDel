@@ -1,7 +1,6 @@
-make.exe buildall --dry-run --keep-going --print-directory
+make.exe buildall --dry-run --always-make --keep-going --print-directory
 make.exe: Entering directory 'c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Assingments/Assing.10'
 g++    -c -o main.o main.cpp
- 
 g++    -c -o student.o student.cpp
 g++ -o main main.o student.o 
 make.exe: Leaving directory 'c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Assingments/Assing.10'

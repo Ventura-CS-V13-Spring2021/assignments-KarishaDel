@@ -19,9 +19,7 @@ using namespace std;
 
 Student::~Student()
 {
-    numClasses = 0;
     resetClass();
-    name = " ";
 }
 
 Student& Student::operator=(const Student& rhs)
