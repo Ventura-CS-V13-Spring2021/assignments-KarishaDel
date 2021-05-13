@@ -20,6 +20,7 @@ int main()
     int max = 0;
     int num;
     int div;
+    int ph; //place holder
 
     cout << "Number List: \n"; //print the array
     for(int i = 0; i < N; i++)
@@ -34,26 +35,29 @@ int main()
         if(i==0)
         {
             max = num;
+            ph = i;
         }
         else if(max < num)
         {
             max = num;
+            ph = i;
         }
 
     }
-    cout << "Most Factors: " << max;
+    cout << "Most Factors: " << a[ph] << "How many factors: "<< max;
 
 }
 
 int getNumDiv(int a[], int div, int N)
 {
-    int i; 
+    int count = 0; 
 
     for (int i = 0; i < N; i++) // to loop thru the array
     {
         if(div % a[i] == 0)
-        i++;
+        count++;
     }
-    return i;
+    return count; //missing a factor
 }
+
 
