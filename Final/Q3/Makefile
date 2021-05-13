@@ -1,11 +1,11 @@
 CC=g++
 CFLAGS=-I.
-DEPS = student.hpp #CHANGE 
+DEPS = Student.hpp #CHANGE 
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-buildall: main.o student.o  #CHANGE 8 AND 9
-	$(CC) -o main main.o student.o 
+buildall: main.o Student.o  #CHANGE 8 AND 9
+	$(CC) -o main main.o Student.o 
 clean:
 	rm -rf *.o main

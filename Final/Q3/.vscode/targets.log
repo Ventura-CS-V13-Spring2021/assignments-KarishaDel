@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu May 13 12:11:36 2021
+# Make data base, printed on Thu May 13 14:52:09 2021
 
 # Variables
 
@@ -31,7 +31,8 @@ VSCODE_LOG_NATIVE = false
 HOMEDRIVE = C:
 # automatic
 @F = $(notdir $@)
-# automatic
+# automa 
+tic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Final/Q3
@@ -178,7 +179,7 @@ LC_ALL = C
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 3)
-DEPS = student.hpp 
+DEPS = Student.hpp 
 # default
 SUFFIXES := 
 # environment
@@ -211,9 +212,10 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-DUFA09G
 # Directories
 
 # C:\ProgramData\Oracle\Java\javapath (key C:/ProgramData/Oracle/Java/javapath, mtime 1619323502): 5 files, no impossibilities.
-# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1617472670): 5 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corpo 
+ration/NVIDIA NvDLISR, mtime 1617472670): 5 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1602862655): 30 files, no impossibilities.
-# . (key c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Final/Q3, mtime 1620933095): 5 files, no impossibilities.
+# . (key c:/Users/karis/Desktop/VS Folders/CS13/Quiz/assignments-KarishaDel-main/assignments-KarishaDel/Final/Q3, mtime 1620942694): 8 files, no impossibilities.
 # C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1619903284): 61 files, no impossibilities.
 # C:\Program Files\PowerShell\7-preview\preview (key C:/Program Files/PowerShell/7-preview/preview, mtime 1610301205): 3 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1610300752): 8 files, no impossibilities.
@@ -229,11 +231,11 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-DUFA09G
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1610481854): 10 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1620925753): 3056 files, no impossibilities.
 
-# 3505 files, no impossibilities in 18 directories.
+# 3508 files, no impossibilities in 18 directories.
 
 # Implicit Rules
 
-%.o: %.c student.hpp
+%.o: %.c Student.hpp
 #  recipe to execute (from 'Makefile', line 6):
 	$(CC) -c -o $@ $< $(CFLAGS)
 
@@ -249,30 +251,25 @@ all:
 #  File has not been updated.
 
 # Not a target:
-student.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
+# Not a t 
+arget:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-13 12:11:06
+#  Last modified 2021-05-13 14:52:03
 #  File has been updated.
 #  Successfully updated.
 
-buildall: main.o student.o
+buildall: main.o Student.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 9):
-	$(CC) -o main main.o student.o 
+	$(CC) -o main main.o Student.o 
 
 # Not a target:
 .DEFAULT:
@@ -288,6 +285,12 @@ clean:
 	rm -rf *.o main
 
 # Not a target:
+Student.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 main.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -301,15 +304,15 @@ main.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3486 / storage = 52697 B / avg = 15 B
-# current buf: size = 8174 B / used = 3711 B / count = 223 / avg = 16 B
-# other used: total = 44523 B / count = 3263 / avg = 13 B
-# other free: total = 58 B / max = 13 B / min = 5 B / avg = 9 B
+# strcache buffers: 7 (6) / strings = 3487 / storage = 52706 B / avg = 15 B
+# current buf: size = 8174 B / used = 3704 B / count = 222 / avg = 16 B
+# other used: total = 44532 B / count = 3265 / avg = 13 B
+# other free: total = 42 B / max = 11 B / min = 4 B / avg = 7 B
 
-# strcache performance: lookups = 3537 / hit rate = 1%
+# strcache performance: lookups = 3540 / hit rate = 1%
 # hash-table stats:
-# Load=3486/8192=43%, Rehash=0, Collisions=1200/3537=34%
-# Finished Make data base on Thu May 13 12:11:36 2021
+# Load=3487/8192=43%, Rehash=0, Collisions=1206/3540=34%
+# Finished Make data base on Thu May 13 14:52:09 2021
 
  
 make.exe: *** No rule to make target 'all'.  Stop.
