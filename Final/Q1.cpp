@@ -8,9 +8,15 @@ Find the element that has the greatest number of divisible elements(the number o
 
 using namespace std;
 
-int getNumDiv(int num, int a[]);
+int getNumDiv(int num, int a[], int N);
 
 int main()
 {
+    const int N = 6;
 
+}
+
+int getNumDiv(int num, int a[], int N)
+{
+    for (int i = 0; i < )
 }
