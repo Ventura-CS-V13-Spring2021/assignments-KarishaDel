@@ -21,6 +21,18 @@ int main()
         cout << a[i] << " ";
     }
 
-    for(int)
-        
+//count copies
+    for(int i = 0; i < length; i++)
+    {
+        if (a[i] == a[i+1])
+        {
+            count++;
+        }
+        else
+        {
+            cout << a[i] << count << endl;
+        }
+    }
+        cout << a[length] << count <<endl;
+
 }
