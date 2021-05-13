@@ -12,13 +12,13 @@ int main()
 {
     int a[] = {-10, 10, 1, 2, 5, -13, 12, 15, -6, 10, 2, 5};
     int length= sizeof(a)/sizeof(a[0]); //cant use const becasue the size can change
-    int count =;
+    int count = 1; // since it started at 0 but we need it to strat at 1
 
 
     sort(a, a + length, greater<int>()); //sort with algotithm
     for(int i = 0; i < length; i++)
     {
-        cout << a[i] << " ";
+        cout << setw(2) << a[i] << "\n";
     }
      cout << endl;
 
@@ -35,6 +35,6 @@ int main()
             count = 1;
         }
     }
-        cout << a[length] << count <<endl;
+
 
 }
